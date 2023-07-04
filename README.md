@@ -1,16 +1,20 @@
 * [公开的建筑领域的数据集](#公开的建筑领域的数据集)
-   * [1 文本数据集](#1——文本数据集)
-   * [2 图片数据集](#2——图片数据集)
-      * [2.1 建筑平面图](#2.1——建筑平面图)
-      * [2.2 卫星图/航空图/SAR等](#2.2——卫星图/航空图/SAR等)
-      * [2.3 街景照片](#2.3——街景照片)
-      * [2.4 单体建筑照片](#2.3——单体建筑照片)
-   * [3 模型数据集](#模型数据集) 
+   * [1 数据集](#数据集)
+      * [1.1 文本数据集](#文本数据集)
+      * [1.2 图片数据集](#图片数据集)
+         * [1.2.1 建筑平面图](#建筑平面图)
+         * [1.2.2 卫星图/航空图/SAR等](#卫星图/航空图/SAR等)
+         * [1.2.3 街景照片](#街景照片)
+         * [1.2.4 单体建筑照片](#单体建筑照片)
+      * [1.3 模型数据集](#模型数据集)
+      * [1.4 结构化数据集](#结构化数据集) 
 
 
 # 公开的建筑领域的数据集（230629更新）
 
-## 1 文本数据集
+## 1 数据集
+
+### 1。1 文本数据集
 
 - **Houses-dataset**
     - 项目简介：这是一个包含视觉和文本信息的房价基准数据集。每个房屋都由卧室、浴室、厨房和房屋正面的四张图片来表示。这是第一个包含用于估算房价的图片的数据集；
@@ -34,9 +38,9 @@
     - [项目地址](https://github.com/smartaec/auto-rule-transform)
     - [相关论文](https://www.sciencedirect.com/science/article/abs/pii/S0166361522001439?via%3Dihub)，[相关论文2](https://www.sciencedirect.com/science/article/abs/pii/S0926580522003971?via%3Dihub)
 
-## 2 图片数据集
+### 1.2 图片数据集
 
-### 2.1 建筑平面图
+#### 1.2.1 建筑平面图
 
 - **Houses-dataset**
     - 项目简介：一个大规模的CAD绘图数据集。为了克服知识产权的限制，从每个大型平面图中只裁剪了一小部分，并移除了可能传达机密信息的敏感文本。最后，数据集中的平面图块只包含几何和结构信息；
@@ -53,7 +57,7 @@
     - [项目地址](https://ml1323.github.io/MUSE-VAE/dataset/)
     - [相关论文](https://openaccess.thecvf.com/content/CVPR2022/papers/Lee_MUSE-VAE_Multi-Scale_VAE_for_Environment-Aware_Long_Term_Trajectory_Prediction_CVPR_2022_paper.pdf)
 
-### 2.2 卫星图/航空图/SAR等
+#### 1.2.2 卫星图/航空图/SAR等
 
 - ****SZTAKI AirChange Benchmark set****
     - 项目简介：项目主要研究了在航空照片中进行变化检测的混合马尔可夫模型，特别是在有大时间差异的情况下。作者提出了一个新的混合马尔可夫模型，通过在真实世界的航空图像上进行验证，证明了该方法的有效性；
@@ -154,7 +158,7 @@
     - [项目地址](https://opensar.sjtu.edu.cn/index.html)
     - [相关论文](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8952866)
 
-### 2.3 街景照片
+#### 1.2.3 街景照片
 
 - ****Google Street View Data Set****
     - 项目简介：Google街景数据集的图片覆盖了宾夕法尼亚州匹兹堡、佛罗里达州奥兰多的市中心及其周边地区，以及部分纽约曼哈顿地区。提供了这些图片的精确GPS坐标和它们的指南针方向；
@@ -185,7 +189,7 @@
     - [项目地址](http://deeploc.cs.uni-freiburg.de/)
     - [相关论文](http://ais.informatik.uni-freiburg.de/publications/papers/radwan18ral.pdf)
 
-### 2.4 单体建筑照片
+#### 1.2.4 单体建筑照片
 
 - ****Paris6K Dataset****
     - 项目简介：主要是巴黎的地标建筑；
@@ -230,7 +234,7 @@
     - [项目地址](https://pan.baidu.com/s/1vuWIOdBnb-U5F_JOxcZoBw?pwd=9cnh)
     - [相关论文](https://www.sciencedirect.com/science/article/abs/pii/S0926580522003727?via%3Dihub)
 
-## 2.3 模型数据集
+### 1.3 模型数据集
 
 - **三维重建数据集（古建筑）**
     - 项目简介：数据集主要内容包括两部分数据：1）第一部分数据包含激光扫描数据和对应的图像数据。包括清华大学的三处建筑物场景（清华大学老校门、清华学堂、清华生命科学楼），使用Riegl-LMS-Z420i型激光扫描仪获取建筑物的真值数据，同时拍摄图像数据。数据集中包括激光真值数据、图像数据、摄像机投影矩阵。2）第二部分数据为中国四大佛教名山（五台、峨眉、九华、普陀）和两大道教名山（武当、青城）的典型古建筑图像数据；
@@ -281,3 +285,12 @@
     - 发布机构及时间：由荷兰代尔夫特理工大学发布于2021年；
     - [项目地址](https://3d.bk.tudelft.nl/projects/meshannotation/#data-split)
     - [相关论文](https://www.sciencedirect.com/science/article/pii/S0924271621001854)
+      
+### 1.4 结构化数据集
+
+- **BDG2（building-data-genome-project-2）**
+    - 项目简介：这是一个开源项目，旨在提供大量的建筑能源使用数据，以便研究人员可以使用这些数据进行各种分析和研究。数据集可能包括建筑的各种特性，如建筑类型、大小、地理位置等，以及详细的能源使用数据；
+    - 数据类型：这个数据集包含了一些与建筑能源使用相关的数据，例如每日能源消耗（kWh）或水消耗（升）等。此外，这个数据集还包含了一些天气数据，例如外部空气温度（摄氏度）等；
+    - 数据量级：n/a
+    - [项目地址](https://github.com/buds-lab/building-data-genome-project-2)
+    - [相关论文](https://arxiv.org/pdf/2006.02273.pdf)
