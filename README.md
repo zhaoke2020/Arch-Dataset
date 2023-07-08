@@ -1,20 +1,106 @@
 * [公开的建筑领域的数据集](#公开的建筑领域的数据集)
-   * [1 数据集](#数据集)
-      * [1.1 文本数据集](#文本数据集)
-      * [1.2 图片数据集](#图片数据集)
-         * [1.2.1 建筑平面图](#建筑平面图)
-         * [1.2.2 卫星图/航空图/SAR等](#卫星图/航空图/SAR等)
-         * [1.2.3 街景照片](#街景照片)
-         * [1.2.4 单体建筑照片](#单体建筑照片)
-      * [1.3 模型数据集](#模型数据集)
-      * [1.4 结构化数据集](#结构化数据集) 
-   * [2 相关大模型](#相关大模型)
+   * [1 竞赛](#竞赛)
+      * [1.1 已结束的竞赛](#已结束的竞赛)
+      * [1.2 正在进行的竞赛](#正在进行的竞赛)
+   * [2 数据集](#数据集)
+      * [2.1 文本数据集](#文本数据集)
+      * [2.2 图片数据集](#图片数据集)
+         * [2.2.1 建筑平面图](#建筑平面图)
+         * [2.2.2 卫星图/航空图/SAR等](#卫星图/航空图/SAR等)
+         * [2.2.3 街景照片](#街景照片)
+         * [2.2.4 单体建筑照片](#单体建筑照片)
+      * [2.3 模型数据集](#模型数据集)
+      * [2.4 结构化数据集](#结构化数据集) 
+   * [3 相关大模型](#相关大模型)
 
-# 公开的建筑领域的数据集（230704更新）
+# 公开的建筑领域的数据集（230708更新）
 
-## 1 数据集
+# 1. 竞赛
 
-### 1。1 文本数据集
+## 1. 1 已结束的竞赛
+
+- **SpaceNet 1: Building Detection v1**
+    
+    项目简介：数据集为里约热内卢建筑物轮廓卫星图。使用了一个称为YOLT的改进版YOLO模型进行基线性能测试。
+    
+    竞赛组织方：SpaceNet是由IQT Labs的CosmiQ Works和Maxar（当时的DigitalGlobe）在2016年8月创立的。这个非正式的合作旨在加速开源机器学习能力，特别是针对地理空间用例，提供一个免费可用的图像库，其中包含了配准的地图特征。
+    
+    竞赛时间：2017年；
+    
+    [项目地址](https://spacenet.ai/spacenet-buildings-dataset-v1/)
+    
+    [相关论文](https://arxiv.org/pdf/1807.01232.pdf)
+    
+- **SpaceNet 2: Building Detection v2**
+    
+    项目简介：拉斯维加斯、巴黎、上海、喀土穆建筑物轮廓卫星图。第二次建筑物挑战的结果远好于第一次。使用YOLT和MNC的改进版进行基线性能测试。
+    
+    竞赛组织方：SpaceNet是由IQT Labs的CosmiQ Works和Maxar（当时的DigitalGlobe）在2016年8月创立的。这个非正式的合作旨在加速开源机器学习能力，特别是针对地理空间用例，提供一个免费可用的图像库，其中包含了配准的地图特征。
+    
+    竞赛时间：2017年；
+    
+    [项目地址](https://spacenet.ai/spacenet-buildings-dataset-v2/)
+    
+    [相关论文](https://arxiv.org/pdf/1807.01232.pdf)
+    
+- **2018 Open AI Tanzania Building Footprint Segmentation Challenge**
+    
+    项目简介：Open AI Tanzania 邀请数据科学家开发特征检测算法，这些算法可以自动识别坦桑尼亚无人机驾驶员通过桑给巴尔地图倡议（ZMI）收集的高分辨率航空图像中的建筑物和建筑类型。这个挑战的目标是正确地切割并分类处于各种建设阶段的建筑物占地面积。
+    
+    竞赛组织方：Open AI Tanzania
+    
+    竞赛时间：2018年
+    
+    [项目地址](https://competitions.codalab.org/competitions/20100)
+    
+- **DEEPGLOBE：CVPR 2018 - Satellite Challenge**
+    
+    项目简介：这个竞赛围绕三个不同的卫星图像理解任务进行结构化。为此比赛创建和发布的数据集可能作为未来卫星图像分析研究的参考基准。此外，由于挑战任务将涉及经典计算机视觉问题的"野生"形式，这些数据集有可能成为设计强大视觉算法的宝贵测试平台，超越了遥感领域。
+    
+    竞赛组织方：facebook, MIT, 普渡大学，达特茅斯背景的研究人员发起
+    
+    竞赛时间：2018年
+    
+    [项目地址](http://deepglobe.org/index.html)
+    
+- **SpaceNet 4: Off-Nadir Buildings**
+    
+    项目简介：这个挑战的主要目标是从越来越偏离轴线的卫星图像中提取建筑物的轮廓。
+    
+    竞赛组织方：SpaceNet是由IQT Labs的CosmiQ Works和Maxar（当时的DigitalGlobe）在2016年8月创立的。这个非正式的合作旨在加速开源机器学习能力，特别是针对地理空间用例，提供一个免费可用的图像库，其中包含了配准的地图特征。
+    
+    竞赛时间：2019年；
+    
+    [项目地址](https://spacenet.ai/off-nadir-building-detection/)
+    
+    [相关论文](https://arxiv.org/abs/1903.12239)
+    
+- ****2020数字中国创新大赛—应用赛1：建筑智能普查****
+    
+    项目简介：本赛事由福建省有关部门挑选出16个具有代表性的实验区，对于每个实验区，选取没有云雾遮挡的中国高分二号卫星遥感影像。初赛阶段，参赛队伍使用高分二号遥感影像及其标记数据训练模型，并对训练集影像进行建筑物提取。复赛阶段，选手将提交自己的模型测试docker镜像来由天池统一测试；
+    
+    竞赛组织方：数字中国建设峰会组委会；
+    
+    竞赛时间：2020年
+    
+    [项目地址](https://tianchi.aliyun.com/competition/entrance/231767/information)
+    
+- ****IEEE-CIS 3rd Technical Challenge****
+    
+    项目简介：IEEE计算智能学会在2021年7月至11月期间举办了一场基于可再生能源数据的预测和优化竞赛。数据来自澳大利亚墨尔本维多利亚州莫纳什大学克莱顿校区的六栋建筑和六个太阳能设施。数据的分辨率为15分钟，年份为2016年至2020年。参赛者需要预测2020年10月和11月的太阳能发电量和建筑电力使用量；
+    
+    竞赛组织方：IEEE Computational Intelligence Society (IEEE-CIS) 和澳大利亚的莫纳什大学共同发起了这个竞赛；
+    
+    竞赛时间：2021年；
+    
+    [项目地址](https://ieee-dataport.org/competitions/ieee-cis-technical-challenge-predictoptimize-renewable-energy-scheduling)
+    
+
+## 1. 2 正在进行的竞赛：
+
+## 2 数据集
+
+### 2.1 文本数据集
 
 - **Houses-dataset**
     - 项目简介：这是一个包含视觉和文本信息的房价基准数据集。每个房屋都由卧室、浴室、厨房和房屋正面的四张图片来表示。这是第一个包含用于估算房价的图片的数据集；
@@ -38,9 +124,9 @@
     - [项目地址](https://github.com/smartaec/auto-rule-transform)
     - [相关论文](https://www.sciencedirect.com/science/article/abs/pii/S0166361522001439?via%3Dihub)，[相关论文2](https://www.sciencedirect.com/science/article/abs/pii/S0926580522003971?via%3Dihub)
 
-### 1.2 图片数据集
+### 2.2 图片数据集
 
-#### 1.2.1 建筑平面图
+#### 2.2.1 建筑平面图
 
 - **Houses-dataset**
     - 项目简介：一个大规模的CAD绘图数据集。为了克服知识产权的限制，从每个大型平面图中只裁剪了一小部分，并移除了可能传达机密信息的敏感文本。最后，数据集中的平面图块只包含几何和结构信息；
@@ -57,7 +143,7 @@
     - [项目地址](https://ml1323.github.io/MUSE-VAE/dataset/)
     - [相关论文](https://openaccess.thecvf.com/content/CVPR2022/papers/Lee_MUSE-VAE_Multi-Scale_VAE_for_Environment-Aware_Long_Term_Trajectory_Prediction_CVPR_2022_paper.pdf)
 
-#### 1.2.2 卫星图/航空图/SAR等
+#### 2.2.2 卫星图/航空图/SAR等
 
 - ****SZTAKI AirChange Benchmark set****
     - 项目简介：项目主要研究了在航空照片中进行变化检测的混合马尔可夫模型，特别是在有大时间差异的情况下。作者提出了一个新的混合马尔可夫模型，通过在真实世界的航空图像上进行验证，证明了该方法的有效性；
@@ -158,7 +244,7 @@
     - [项目地址](https://opensar.sjtu.edu.cn/index.html)
     - [相关论文](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8952866)
 
-#### 1.2.3 街景照片
+#### 2.2.3 街景照片
 
 - ****Google Street View Data Set****
     - 项目简介：Google街景数据集的图片覆盖了宾夕法尼亚州匹兹堡、佛罗里达州奥兰多的市中心及其周边地区，以及部分纽约曼哈顿地区。提供了这些图片的精确GPS坐标和它们的指南针方向；
@@ -189,7 +275,7 @@
     - [项目地址](http://deeploc.cs.uni-freiburg.de/)
     - [相关论文](http://ais.informatik.uni-freiburg.de/publications/papers/radwan18ral.pdf)
 
-#### 1.2.4 单体建筑照片
+#### 2.2.4 单体建筑照片
 
 - ****Oxford5k Dataset****
     - 项目简介：Oxford5k Dataset是一个包含5062张高分辨率（1024 × 768）图像的数据集，这些图像主要是一些地标的照片。对于每个地标，选择了5个不同的查询区域。这五个查询用于平均任何单个查询的特性。
@@ -255,7 +341,7 @@
     - [项目地址](https://pan.baidu.com/s/1vuWIOdBnb-U5F_JOxcZoBw?pwd=9cnh)
     - [相关论文](https://www.sciencedirect.com/science/article/abs/pii/S0926580522003727?via%3Dihub)
 
-### 1.3 模型数据集
+### 2.3 模型数据集
 
 - **三维重建数据集（古建筑）**
     - 项目简介：数据集主要内容包括两部分数据：1）第一部分数据包含激光扫描数据和对应的图像数据。包括清华大学的三处建筑物场景（清华大学老校门、清华学堂、清华生命科学楼），使用Riegl-LMS-Z420i型激光扫描仪获取建筑物的真值数据，同时拍摄图像数据。数据集中包括激光真值数据、图像数据、摄像机投影矩阵。2）第二部分数据为中国四大佛教名山（五台、峨眉、九华、普陀）和两大道教名山（武当、青城）的典型古建筑图像数据；
@@ -307,7 +393,7 @@
     - [项目地址](https://3d.bk.tudelft.nl/projects/meshannotation/#data-split)
     - [相关论文](https://www.sciencedirect.com/science/article/pii/S0924271621001854)
       
-### 1.4 结构化数据集
+### 2.4 结构化数据集
 
 - **BDG2（building-data-genome-project-2）**
     - 项目简介：这是一个开源项目，旨在提供大量的建筑能源使用数据，以便研究人员可以使用这些数据进行各种分析和研究。数据集可能包括建筑的各种特性，如建筑类型、大小、地理位置等，以及详细的能源使用数据；
@@ -316,7 +402,7 @@
     - [项目地址](https://github.com/buds-lab/building-data-genome-project-2)
     - [相关论文](https://arxiv.org/pdf/2006.02273.pdf)
 
-## 2. 相关大模型
+## 3. 相关大模型
 
 - **司空（Sikong）：基于中文建筑行业知识的LLaMA和Alpaca微调大模型**
     - 项目简介："Sikong" 是一个开源项目，它基于中文建筑行业知识对LLaMA和Alpaca模型进行了微调。这个项目通过收集建筑行业基础资料，构建了建筑行业数据集，并对LLaMA进行了指令微调，从而提高了LLaMA在中文建筑领域的问答效果。
