@@ -95,6 +95,16 @@
     
     [项目地址](https://ieee-dataport.org/competitions/ieee-cis-technical-challenge-predictoptimize-renewable-energy-scheduling)
     
+- ****Computer Vision in the Built Environment****
+    
+    项目简介：为了进一步建立这两个领域之间的联系，迈向理想的建筑流程，研讨会通过举办Scan-to-BIM挑战赛，重点探索如何将激光雷达、摄影测量或深度地图相机获得的三维点云数据转换为建筑信息模型(BIM)和平面图(FloorPlan);
+    
+    竞赛组织方：建成环境计算机视觉研讨会是由苏黎世联邦理工学院主办，旨在将建筑、工程和建筑(AEC)领域与计算机视觉领域联系起来，解决与AEC社区相关的问题，比如了解建筑工地的变化，以及从真实数据扫描中自动生成建筑模型等现实世界问题。如果这些问题得到解决，将对这个数万亿美元的行业以及全球的整体生活质量产生切实的影响;
+    
+    竞赛时间：2023年第3届;
+    
+    [项目地址](https://cv4aec.github.io/)
+  
 
 ## 1. 2 正在进行的竞赛：
 
